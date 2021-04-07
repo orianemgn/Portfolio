@@ -68,7 +68,8 @@ body{
     max-width: 100%;
 }
 
-.skillsSection {
+.skillsSection,
+.contactSection {
     background-color:#38ada9 ;
     color: #fff;
 }
@@ -140,4 +141,20 @@ body{
     font-size: 45px;
     margin-left: -20%;
     color: #444;
+}
+
+.contactButton{
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px; 
+    display: inline-block;
+    margin-top: 20px;
+    border: 1px solid #fff;
+    border-radius:2px;
+}
+
+.contactButton:hover{
+    text-decoration:none; 
+    color: #38ada9;
+    background-color: #fff;
 }
