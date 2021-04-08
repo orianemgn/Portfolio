@@ -6,6 +6,7 @@
         <link rel="stylesheet" type="text/css" href="css/superslides.css"/>
         <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -32,6 +33,38 @@
                 <a href="#" class="prev"></a>
             </nav>
         </div>
+
+
+        <nav id="navigation" class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#stats">Stats</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
 
 
         <div id="about" class="section">
@@ -153,6 +186,7 @@
             </div>
         </div>
 
+
         <div id="contact" class="contactSection section">
             <div class="col-md-12 text-center">
                 <p class="subHeading">Like what you see?</p>
@@ -162,16 +196,114 @@
         </div>
 
 
+        <div id="portfolio" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="heading">
+                        <h2>PORTFOLIO</h2>
+                    </div>
+                    <div class="filter">
+                        <ul id="filters">
+                            <li><a href="#" data-filter="*" class="current">All</a></li>
+                            <li><a href="#" data-filter=".games">Games</a></li>
+                            <li><a href="#" data-filter=".fullstack">Full Stack Apps</a></li>
+                            <li><a href="#" data-filter=".mern">MERN Apps</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="itemsContainer">
+                        <ul class="items">
+                            <!--xs for phones,sm for tablette, md for desktops, lg for large desktops-->
+                            <li onclick="" class="games col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                <div class="item">
+                                    <img src="img/portfolio/thumbnails/2048-square.JPG">
+
+                                    <div class="icons">
+                                        <a href="img/portfolio/2048.JPG" title="View image" class="openButton" data-fancybox data-caption="this is a project">
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                        <a href="https://orianemgn.github.io/the-game-project/" target="_blank" class="projectLink">
+                                            <i class="fa fa-link"></i>
+                                        </a>
+                                    </div>
+                                    <div class="imageOverlay"></div>
+                                </div>
+                            </li>
+                            <li onclick="" class="fullstack col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                <div class="item">
+                                    <img src="img/portfolio/thumbnails/wander-square.JPG">
+
+                                    <div class="icons">
+                                        <a href="img/portfolio/wander.JPG" title="View image" class="openButton" data-fancybox data-caption="this is a project">
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                        <a href="https://github.com/orianemgn/WANDER" target="_blank" class="projectLink">
+                                            <i class="fa fa-link"></i>
+                                        </a>
+                                    </div>
+                                    <div class="imageOverlay"></div>
+                                </div>
+                            </li>
+                            <li onclick="" class="mern col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                <div class="item">
+                                    <img src="img/portfolio/thumbnails/papagei-square.JPG">
+
+                                    <div class="icons">
+                                        <a href="img/portfolio/papagei.JPG" title="View image" class="openButton" data-fancybox data-caption="this is a project">
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                        <a href="https://github.com/Projekt-3-Tandem-App/papagei" target="_blank" class="projectLink">
+                                            <i class="fa fa-link"></i>
+                                        </a>
+                                    </div>
+                                    <div class="imageOverlay"></div>
+                                </div>
+                            </li>
+                            <li onclick="" class="games col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                <div class="item">
+                                    <img src="img/portfolio/thumbnails/2048-square.JPG">
+
+                                    <div class="icons">
+                                        <a href="img/portfolio/2048.JPG" title="View image" class="openButton" data-fancybox data-caption="this is a project">
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                        <a href="" target="_blank" class="projectLink">
+                                            <i class="fa fa-link"></i>
+                                        </a>
+                                    </div>
+                                    <div class="imageOverlay"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+            
+        </div>
+
+
+        <div class="copyrightSection">
+            <div class="col-md-12 text-center">
+                <p>&copy; Oriane MAGNIN 2021</p>
+            </div>
+        </div>
 
 
 
 
 
+
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/typed.min.js"></script>
         <script src="js/jquery.superslides.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>
