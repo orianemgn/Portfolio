@@ -1,3 +1,18 @@
+$(window).on("load", function(){
+    $(".loader .inner").fadeOut(500, function(){
+        $(".loader").fadeOut(750);
+    });
+
+    $(".items").isotope({
+        filter:'*',
+        animationOptions: {
+            duration: 1500,
+            easing: 'linear',
+            queue: false
+        }
+    });
+})
+
 //this code in here will execture when the page is ready
 $(document).ready(function(){
     
@@ -58,16 +73,7 @@ $(document).ready(function(){
     });
 
     $("[data-fancybox]").fancybox
-
-    $(".items").isotope({
-        filter:'*',
-        animationOptions: {
-            duration: 1500,
-            easing: 'linear',
-            queue: false
-        }
-    });
-
+    
     $("#filters a").click(function(){
         $("#filters .current").removeClass("current");
         $(this).addClass("current");
@@ -85,6 +91,16 @@ $(document).ready(function(){
         return false; 
     });
 
+    $("#navigation li a").click(function(e){
+        e.preventDefault();
+
+        let targetElement = $(this).attr("href");
+        let targetPosition = $(targetElement).offset().top; 
+        $("html, body").animate({scrollTop: targetPosition - 50}, "1500");
+    });
+
+
+
     const nav = $("#navigation");
     const navTop = nav.offset().top;
     
@@ -92,6 +108,14 @@ $(document).ready(function(){
 
     function stickyNavigation(){
         let body = $("body");
+
+        if($(window).scrollTop() >= navTop) {
+            body.css("padding-top", nav.outerHeight() +"px")
+            body.addClass("fixedNav");
+        } else {
+            body.css("padding-top", 0)
+            body.removeClass("fixedNav");
+        }
     }
 
 }); 
