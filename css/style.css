@@ -26,13 +26,18 @@ body{
 }
 
 .slides-navigation a.prev {
-    left: 20px; 
+    left: 15px; 
     background-image: url(../img/icon/prev.png); 
+    background-size: 80%;
+    margin-top: 30px; 
+    
 }
 
 .slides-navigation a.next {
-    right: 20px; 
+    right: 15px; 
     background-image: url(../img/icon/next.png);
+    background-size: 80%;
+    margin-top: 30px; 
 }
 
 .titleMessage{
@@ -53,11 +58,12 @@ body{
 }
 
 .titleMessage .heading .main{
-    font-size:48px; 
+    font-size:45px;
 }
 
 .titleMessage .heading .sub{
-    font-size:20px; 
+    font-size:18px; 
+    padding-top: 10px;
 }
 
 .section{
@@ -79,21 +85,27 @@ body{
 .skill{
     text-align: center;
     align-items: center;
-    padding: 40px;
+    /* padding: 50px; */
 }
 
 .skill-logo{
-    width: 30px;
+    width: 25px;
     position : relative;
     display: inline-block;
     margin-bottom: 25px;
     margin-top: 25px;
+    margin-right: 40px;
     text-align: center;
+    color: black;
+    font-size: 90px; 
 }
 
-.squareItem{
+
+/* .squareItem{
     margin-top:30px; 
     position: relative;
+    padding: 40px;
+    
 }
 
 .squareInnerContainer{
@@ -102,6 +114,7 @@ body{
     text-align: center;
     border: 2px solid #444;
     border-top: none; 
+    width: 200px;
 }
 
 .squareInnerContainer:before,
@@ -143,7 +156,7 @@ body{
     font-size: 45px;
     margin-left: -20%;
     color: #444;
-}
+} */
 
 .contactButton{
     color: #fff;
@@ -159,6 +172,18 @@ body{
     text-decoration:none; 
     color: #38ada9;
     background-color: #fff;
+}
+
+.social-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;   
+}
+
+.social-list .social-item i {
+    color: #fff;
+    font-size:25px; 
+    padding: 30px 15px 0px; 
 }
 
 .section .heading {
