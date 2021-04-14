@@ -26,7 +26,7 @@ $(document).ready(function(){
 
     //call type.min.js to change the text 
     var typed = new Typed(".typed",{
-        strings:[ "web developer","junior","fullstack", "based in Berlin"],
+        strings:[ "web developer","junior", "based in Berlin"],
         typeSpeed: 70, 
         loop: true, 
         startDelay: 1000, 

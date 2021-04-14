@@ -101,7 +101,7 @@ body{
 }
 
 
-/* .squareItem{
+ .squareItem{
     margin-top:30px; 
     position: relative;
     padding: 40px;
@@ -135,14 +135,14 @@ body{
 }
 
 .squareContent h2{
-    font-size: 56px;
+    font-size: 40px;
     margin-bottom: 10px; 
     font-weight: 400;
     color:#38ada9 ;
 }
 
 .squareContent h3 {
-    font-size: 13px;
+    font-size: 10px;
     font-weight: 600px;
     margin: 0;
 }
@@ -156,7 +156,7 @@ body{
     font-size: 45px;
     margin-left: -20%;
     color: #444;
-} */
+} 
 
 .contactButton{
     color: #fff;
@@ -240,6 +240,7 @@ body{
     position: relative;
     display: block;
     overflow: hidden;
+    border: 6px solid #38ada9
 }
 
 .items .icons {
