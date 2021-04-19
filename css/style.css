@@ -106,8 +106,11 @@ body{
 
 .owl-prev span, 
 .owl-next span {
-    color: #38ada9; 
+    /* color: #38ada9;  */
+    color:#38ada9; 
+
 }
+
 
 
  .squareItem{
