@@ -71,9 +71,13 @@ body{
 }
 
 .aboutImage{
-    max-width: 80%;
+    max-width: 60%;
     border-radius: 100%;
     border: 3px solid #38ada9;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
 }
 
 .skillsSection,
