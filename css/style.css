@@ -66,9 +66,13 @@ body{
     padding-top: 10px;
 }
 
+
+
 .section{
     padding: 100px 0; 
 }
+
+/*Section About*/
 
 .aboutImage{
     max-width: 60%;
@@ -79,6 +83,9 @@ body{
     margin-right: auto;
     margin-bottom: 30px;
 }
+
+
+/*Section Skills*/
 
 .skillsSection,
 .contactSection {
@@ -104,14 +111,39 @@ body{
     font-size: 90px; 
 }
 
-.owl-prev span, 
+/* .owl-prev span, 
 .owl-next span {
-    /* color: #38ada9;  */
+  
     color:#38ada9; 
 
+} */
+
+/*Navigation carousel */
+
+.owl-nav .owl-next, .owl-nav .owl-prev {
+    position: absolute;
+    top: 48%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.owl-nav .owl-next {
+    right: 0;
+    display: flex;
+    margin-right: 2%;
+    font-size: 25px !important;
+}
+.owl-nav .owl-prev{
+    left: 0;
+    display: flex;
+    margin-left: 2%;
+    font-size: 25px !important;
 }
 
+/* End navigation carousel */
 
+
+
+/*Section Hobbies*/ 
 
  .squareItem{
     margin-top:30px; 
@@ -180,6 +212,8 @@ body{
     color: #444;
 } 
 
+
+/*Section Contact*/
 .contactButton{
     color: #fff;
     text-decoration: none;
@@ -214,6 +248,9 @@ body{
     width: 100%
 }
 
+
+/*Section Portfolio*/
+
 .filter{
     text-align:center;
     width:100%;
@@ -242,6 +279,8 @@ body{
 .items li{
     display: inline-block;
     padding:5px;
+    justify-content:center;
+    
 }
 
 .itemsContainer{
