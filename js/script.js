@@ -63,7 +63,7 @@ $(document).ready(function(){
             },
             600:{
                 items:3,
-                nav:false,
+                nav:true,
                 loop:true
             },
             1000:{
