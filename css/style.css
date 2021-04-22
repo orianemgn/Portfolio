@@ -150,8 +150,7 @@ body{
     position: relative;
     padding: 40px;
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: space-around;    
 }
 
 .squareInnerContainer{
