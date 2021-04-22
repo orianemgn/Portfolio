@@ -149,6 +149,8 @@ body{
     margin-top:30px; 
     position: relative;
     padding: 40px;
+    display: flex;
+    justify-content: space-around;
     
 }
 
@@ -428,6 +430,7 @@ body{
     position: fixed; 
     top: 0; 
 }
+
 
 
 /*Loading page*/

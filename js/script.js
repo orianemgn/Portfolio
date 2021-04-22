@@ -101,6 +101,8 @@ $(document).ready(function(){
         $("html, body").animate({scrollTop: targetPosition - 50}, "1500");
     });
 
+    
+
 
 
     const nav = $("#navigation");
